@@ -1,0 +1,7 @@
+node_modules
+.env
+firebase-adminsdk.json
+firebase-config.json
+build
+package-lock.json
+publico

@@ -1,0 +1,14 @@
+version: "3"
+
+services: 
+  app_compra:
+    build: ./app_compra
+    ports: 
+      - "3100:3000"
+    env_file: ./app_compra/.env
+
+  app_vende:
+    build: ./app_vende
+    ports:
+      - "3200:3000"
+    env_file: ./app_vende/.env

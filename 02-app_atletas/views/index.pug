@@ -1,0 +1,27 @@
+include mixins/cabecalho.pug
+include mixins/atletas.pug
+
+doctype html
+html
+  +cabecalho(titulo)
+  body
+    .container.is-fluid
+      include includes/ine5646.pug
+      .columns
+        .column.is-three-quarters
+            .message.is-info
+              .message-header
+                p= `Atletas da Equipe: ${equipe.nome}`
+              .message-body
+                +atletas(equipe.atletas)
+        .column
+            .message.is-primary
+              .message-header
+                p Pesquisar Atletas por Altura
+              .message-body
+                form(action='pesquisePorAltura' method='get')
+                  .field
+                    .label Altura Mínima
+                    .control
+                      input.input(name='altura_minima' type='number' required)
+                  button.button.is-primary(type='submit') Pesquisar

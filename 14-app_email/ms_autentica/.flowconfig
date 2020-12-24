@@ -1,0 +1,16 @@
+[ignore]
+.*/node_modules/.*
+!.*/node_modules/moleculer/.*
+!.*/node_modules/mongodb/.*
+!.*/node_modules/jsonwebtoken/.*
+!.*/node_modules/uuid/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]

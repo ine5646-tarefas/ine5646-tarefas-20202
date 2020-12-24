@@ -1,0 +1,25 @@
+include mixins/cabecalho.pug
+include mixins/atletas.pug
+
+doctype html
+html
+  +cabecalho(titulo)
+
+  body
+    .container.is-fluid
+      include includes/ine5646.pug
+      .columns
+        .column.is-three-quarters
+            .message.is-info
+              .message-header
+                p= `Atletas da Equipe ${nome} com Altura Mínima igual a ${alturaMinima}`
+              .message-body
+                +atletas(atletas)
+        .column
+            .message.is-primary
+              .message-header
+                p Fazer Nova Pesquisa
+              .message-body
+                form(action='/' method='get')
+                  button.button.is-primary(type='submit') Nova Pesquisa
+  

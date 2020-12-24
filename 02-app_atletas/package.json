@@ -1,0 +1,30 @@
+{
+  "name": "app_atletas",
+  "version": "1.0.0",
+  "description": "Aplicação exemplo que usa express e pug.",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "start": "nodemon --exec npx babel-node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "pug"
+  ],
+  "author": "Leandro J. Komosinski",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.8",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "eslint": "^7.14.0",
+    "nodemon": "^2.0.6"
+  }
+}

@@ -1,0 +1,15 @@
+mixin atletas(atletas)
+  if atletas.length == 0
+    .notification.is-warning
+      p Não há atletas.
+  else
+      table.table.is-striped.is-hoverable.is-bordered
+        thead
+          tr
+            th Nome
+            th Altura (cm)
+        tbody
+          each atleta in atletas
+            tr
+              td= atleta.nome
+              td= atleta.altura

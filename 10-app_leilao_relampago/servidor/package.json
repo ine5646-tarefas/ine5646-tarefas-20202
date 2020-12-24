@@ -1,0 +1,33 @@
+{
+  "name": "app_leilao_relampago_servidor",
+  "version": "1.0.0",
+  "description": "Lado servidor da aplicação exemplo de websocket.",
+  "scripts": {
+    "start": "nodemon --exec npx babel-node src/app.js",
+    "build": "babel src -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Flow",
+    "React",
+    "Websocket"
+  ],
+  "author": "Leandro J. Komosinski",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ws": "^7.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-flow": "^7.12.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.14.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "flow-bin": "^0.138.0",
+    "nodemon": "^2.0.6"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "app_vulcoes_servidor",
+  "version": "1.0.0",
+  "description": "Aplicação que acessa base de dados MongoDB para ler e gravar imagens de vulcões.",
+  "scripts": {
+    "start": "nodemon --exec npx babel-node src/app.js",
+    "build": "babel src -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Flow",
+    "MongoDB"
+  ],
+  "author": "Leandro J. Komosinski",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-flow": "^7.12.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.14.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "flow-bin": "^0.138.0",
+    "nodemon": "^2.0.6"
+  }
+}

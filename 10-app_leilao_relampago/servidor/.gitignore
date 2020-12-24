@@ -1,0 +1,5 @@
+node_modules
+build
+publico
+package-lock.json
+.env

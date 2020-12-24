@@ -1,0 +1,17 @@
+[ignore]
+.*/node_modules/.*
+!.*/node_modules/express/.*
+!.*/node_modules/bulma/.*
+!.*/node_modules/firebase-admin/.*
+!.*/node_modules/firebase/.*
+
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]

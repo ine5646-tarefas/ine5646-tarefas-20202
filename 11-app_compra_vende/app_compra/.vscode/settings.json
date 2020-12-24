@@ -1,0 +1,12 @@
+{
+    "flow.pathToFlow": "${workspaceFolder}/servidor/node_modules/.bin/flow",
+     "eslint.workingDirectories": [
+      {
+        "directory": "./cliente", "changeProcessCWD": true
+      },
+      {
+        "directory": "./servidor", "changeProcessCWD": true
+      }
+    ],
+    "npm.enableRunFromFolder": true
+}

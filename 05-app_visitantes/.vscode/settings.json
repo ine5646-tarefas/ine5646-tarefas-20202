@@ -1,0 +1,11 @@
+{
+    "eslint.workingDirectories": [
+        {
+          "directory": "./cliente", "changeProcessCWD": true
+        },
+        {
+          "directory": "./servidor", "changeProcessCWD": true
+        }
+      ],
+      "npm.enableRunFromFolder": true
+}

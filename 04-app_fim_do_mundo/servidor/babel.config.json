@@ -1,0 +1,15 @@
+{
+	"presets": [
+		[
+			"@babel/env",
+			{
+				"useBuiltIns": "usage",
+				"corejs": 3,
+				"debug": true,
+				"targets": {
+					"node": "current"
+				}
+			}
+		]
+	]
+}

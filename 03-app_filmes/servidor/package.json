@@ -1,0 +1,28 @@
+{
+  "name": "app_filmes_servidor",
+  "version": "1.0.0",
+  "description": "Aplicação que mostra componentes React com estética Bulma",
+  "scripts": {
+    "start": "nodemon --exec npx babel-node src/app.js",
+    "build": "babel src -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "Bulma"
+  ],
+  "author": "Leandro J. Komosinski",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.7.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.8",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "eslint": "^7.14.0",
+    "nodemon": "^2.0.6"
+  }
+}

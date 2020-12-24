@@ -1,0 +1,15 @@
+[ignore]
+.*/node_modules/.*
+!.*/node_modules/moleculer/.*
+!.*/node_modules/node-fetch/.*
+!.*/node_modules/nodemailer/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
