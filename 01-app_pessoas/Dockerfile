@@ -15,7 +15,7 @@ RUN npm run build
 FROM node:14-alpine as prod
 WORKDIR /app
 COPY --from=build /app/package*.json ./ 
-COPY --from=build /app/servidor/cert ./cert
+COPY --from=build /app/cert ./cert
 RUN npm install --production 
 COPY --from=build /app/build ./build
 CMD [ "node", "build/app.js" ]
