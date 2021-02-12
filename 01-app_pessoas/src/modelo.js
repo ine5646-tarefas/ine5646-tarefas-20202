@@ -25,7 +25,7 @@ class Pessoa {
  * @returns [Pessoa]
  */
 function selecionaPessoas (pessoas, idadeLimite) {
-  return pessoas
+  return pessoas.filter(p => p.idade > idadeLimite)
 }
 
 // Dados fictícios
